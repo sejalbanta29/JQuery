@@ -1,0 +1,42 @@
+<html>
+<head>
+
+    <link rel="stylesheet" href="10.css">
+</head>
+
+<body>
+    <div class="button">
+    <ul class="hover">
+       <li class="hoverli">
+       <p class="menu_class">Hover here for displaying dropdown</p>
+        <ul class="file_menu">
+        <li>
+            File
+        </li>
+        <li>Edit</li>
+        <li>Delete</li>
+        <li>Help</li>
+       
+        </ul>
+     <li>
+</ul>
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+
+<script>
+$(document).ready(function () {
+    $(".hoverli").hover(
+  function () {
+     $('ul.file_menu').slideDown('medium');
+  }, 
+  function () {
+     $('ul.file_menu').slideUp('medium');
+  }
+);
+});
+</script>
+
+
+</html>

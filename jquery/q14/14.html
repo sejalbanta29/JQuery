@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<link rel="stylesheet" href="14.css">
+</head>
+<body>
+
+<table style="width:100%" id="someTable">
+   
+  <tr>
+    <th class="name">First Name</th>
+    <th class="lname">Last Name</th>
+    <th class="Roll">Roll no.</th>
+  </tr>
+  <tr>
+    <td class="fname">Sejal</td>
+    <td class="lname">Banta</td>
+    <td class="Roll">21</td>
+  </tr>
+  <tr>
+    <td class="name">Tanya</td>
+    <td class="lname">Sood</td>
+    <td class="Roll">9</td>
+  </tr>
+   <tr>
+    <td class="name">Harpuneet</td>
+    <td class="lname">Kaur</td>
+    <td class="Roll">6</td>
+  </tr>
+<tr>
+    <td class="name">Venya</td>
+    <td class="lname">Banta</td>
+    <td class="Roll">15</td>
+  
+  </tr>
+</table>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+
+    $('.Roll').each(function(i, n) {
+   if($(n).text() > 10) 
+      $(n).css('color', 'green').css('background-color','red');
+});
+});
+</script>
+
+
+</body>
+</html>

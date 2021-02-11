@@ -1,0 +1,38 @@
+  
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Q9</title>
+	
+</head>
+<body>
+<p>Select daily items from the list.</p>
+
+<select>
+  <option value="">Select items</option>
+  <option value="soap">soap
+  <option value="shampoo">shampoo
+  <option value="detergent">detergent
+  <option value="conditioner">conditioner
+</select>
+
+<p>So you want to have 
+<div>
+<p id="id1"></p>
+</div> 
+</p>
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script>
+$(document).ready(function() { 
+         $('select').on('change', function() {
+         $("#id1").append(this.value+" <br>")
+});
+});
+    
+</script>
+
+
+
+
+</body>
+</html>
